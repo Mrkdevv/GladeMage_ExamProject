@@ -1,0 +1,8 @@
+//
+// Created by dedus on 07.02.2026.
+//
+
+#ifndef GLADEMAGE_EXAM_CONSTANTS_GAME_H
+#define GLADEMAGE_EXAM_CONSTANTS_GAME_H
+
+#endif //GLADEMAGE_EXAM_CONSTANTS_GAME_H

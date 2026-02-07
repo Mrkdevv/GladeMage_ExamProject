@@ -1,0 +1,13 @@
+//
+// Created by dedus on 07.02.2026.
+//
+
+#ifndef GLADEMAGE_EXAM_STARTGAMEENGINE_H
+#define GLADEMAGE_EXAM_STARTGAMEENGINE_H
+
+
+class StartGameEngine {
+};
+
+
+#endif //GLADEMAGE_EXAM_STARTGAMEENGINE_H

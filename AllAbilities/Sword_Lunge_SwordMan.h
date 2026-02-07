@@ -1,0 +1,13 @@
+//
+// Created by dedus on 07.02.2026.
+//
+
+#ifndef GLADEMAGE_EXAM_SWORD_LUNGE_SWORDMAN_H
+#define GLADEMAGE_EXAM_SWORD_LUNGE_SWORDMAN_H
+
+
+class Sword_Lunge_SwordMan {
+};
+
+
+#endif //GLADEMAGE_EXAM_SWORD_LUNGE_SWORDMAN_H
