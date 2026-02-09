@@ -7,6 +7,13 @@
 
 
 class Berserker_Orc {
+public:
+    int healthCost;
+    int addedDamage;
+    int duration;
+    int vampirismChance;
+
+    Berserker_Orc();
 };
 
 

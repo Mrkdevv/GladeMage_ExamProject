@@ -7,6 +7,13 @@
 
 
 class SwordMan {
+    public:
+    SwordMan();
+
+    int health;
+    int maxhealth;
+    int damage;
+    int mana;
 };
 
 

@@ -1,5 +1,9 @@
-//
-// Created by dedus on 06.02.2026.
-//
-
 #include "Mage.h"
+#include "../MainGameLogic/Constants_Game.h"
+
+Mage::Mage() {
+    this->health =GameSettings::Mage::HP;
+    this->maxhealth =GameSettings::Mage::HP;
+    this->damage =GameSettings::Mage::DAMAGE;
+    this->mana =GameSettings::Mage::MANA;
+}

@@ -32,6 +32,7 @@ namespace GameSettings {
     namespace Mage {
         constexpr int HP = 100;
         constexpr int DAMAGE = 10;
+        constexpr int MANA = 110;
 
         namespace Fireball {
             constexpr int MANA_COST = 25;
@@ -53,6 +54,7 @@ namespace GameSettings {
     namespace Archer {
         constexpr int HP = 100;
         constexpr int DAMAGE = 8;
+        constexpr int MANA = 100;
 
         namespace Hail_of_arrows {
             constexpr int MANA_COST = 30;
@@ -74,6 +76,7 @@ namespace GameSettings {
     namespace SwordMan {
         constexpr int HP = 100;
         constexpr int DAMAGE = 12;
+        constexpr int MANA = 100;
 
         namespace Slashing_Lunge {
             constexpr int MANA_COST = 18;
@@ -97,6 +100,7 @@ namespace GameSettings {
     namespace Druid {
         constexpr int HP = 105;
         constexpr int DAMAGE = 11;
+        constexpr int MANA = 80;
 
         namespace Strangleroot {
             constexpr int MANA_COST = 20;

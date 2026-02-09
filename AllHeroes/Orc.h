@@ -7,6 +7,13 @@
 
 
 class Orc {
+    public:
+    Orc();
+
+    int health;
+    int maxhealth;
+    int damage;
+    int mana;
 };
 
 

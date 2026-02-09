@@ -7,7 +7,13 @@
 
 
 class Archer {
-};
+public:
+    Archer();
 
+    int health;
+    int maxhealth;
+    int damage;
+    int mana;
+};
 
 #endif //GLADEMAGE_EXAM_ARCHER_H

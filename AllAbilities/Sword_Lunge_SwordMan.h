@@ -7,6 +7,13 @@
 
 
 class Sword_Lunge_SwordMan {
+    public:
+    int MANA_COST;
+    int DAMAGE;
+    int ROUND_DURATION;
+    int CHANCE_TO_PASS_DAMAGE;
+    int CHANCE_TO_DOUBLE_DAMAGE;
+    Sword_Lunge_SwordMan();
 };
 
 

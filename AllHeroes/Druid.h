@@ -7,6 +7,13 @@
 
 
 class Druid {
+    public:
+    Druid();
+
+    int health;
+    int maxhealth;
+    int damage;
+    int mana;
 };
 
 
