@@ -4,16 +4,15 @@
 
 #ifndef GLADEMAGE_EXAM_ARCHER_H
 #define GLADEMAGE_EXAM_ARCHER_H
+#include "../AllAbilities/Hail_of_arrows_Archer.h"
+#include "../AllAbilities/Powershot_Archer.h"
+#include "Hero.h"
 
-
-class Archer {
+class Archer : public Hero{
 public:
     Archer();
-
-    int health;
-    int maxhealth;
-    int damage;
-    int mana;
+    Hail_of_arrows_Archer HailOfArrows;
+    Powershot_Archer Powershot;
 };
 
 #endif //GLADEMAGE_EXAM_ARCHER_H

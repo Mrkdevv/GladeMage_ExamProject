@@ -4,16 +4,15 @@
 
 #ifndef GLADEMAGE_EXAM_ORC_H
 #define GLADEMAGE_EXAM_ORC_H
+#include "../AllAbilities/Berserker_Orc.h"
+#include "../AllAbilities/Protection_Orc.h"
+#include "Hero.h"
 
-
-class Orc {
+class Orc : public Hero {
     public:
     Orc();
-
-    int health;
-    int maxhealth;
-    int damage;
-    int mana;
+    Berserker_Orc berserker;
+    Protection_Orc protection;
 };
 
 

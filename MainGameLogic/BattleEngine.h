@@ -1,13 +1,31 @@
-//
-// Created by dedus on 07.02.2026.
-//
+#ifndef GLADEMAGE_EXAM_STARTGAMEENGINE_H
+#define GLADEMAGE_EXAM_STARTGAMEENGINE_H
+#include <string>
+#include "..\AllHeroes/Hero.h"
+#include "../AllHeroes/Orc.h"
+#include "../AllHeroes/Archer.h"
+#include "../AllHeroes/Druid.h"
+#include "../AllHeroes/Mage.h"
+#include "../AllHeroes/SwordMan.h"
 
-#ifndef GLADEMAGE_EXAM_BATTLEENGINE_H
-#define GLADEMAGE_EXAM_BATTLEENGINE_H
 
 
 class BattleEngine {
+public:
+    std::string FirstPlayerName;
+    std::string SecondPlayerName;
+
+    Hero* p1 = nullptr;
+    Hero* p2 = nullptr;
+
+    void PlayersName(int num, std::string &nameTarget);
+    void PlayersHeroChoose(std::string PlayerName, Hero* &Target);
+
+    ~BattleEngine() {
+        delete p1;
+        delete p2;
+    }
 };
 
 
-#endif //GLADEMAGE_EXAM_BATTLEENGINE_H
+#endif //GLADEMAGE_EXAM_STARTGAMEENGINE_H

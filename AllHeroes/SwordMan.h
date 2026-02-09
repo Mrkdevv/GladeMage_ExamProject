@@ -4,16 +4,15 @@
 
 #ifndef GLADEMAGE_EXAM_SWORDMAN_H
 #define GLADEMAGE_EXAM_SWORDMAN_H
+#include "../AllAbilities/Slashing_Lunge_SwordMan.h"
+#include "../AllAbilities/Sword_Lunge_SwordMan.h"
+#include "Hero.h"
 
-
-class SwordMan {
+class SwordMan : public Hero {
     public:
     SwordMan();
-
-    int health;
-    int maxhealth;
-    int damage;
-    int mana;
+    Slashing_Lunge_SwordMan Slashing_Lunge;
+    Sword_Lunge_SwordMan Sword_Lunge;
 };
 
 

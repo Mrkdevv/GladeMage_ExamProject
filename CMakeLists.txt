@@ -40,4 +40,6 @@ add_executable(GladeMage_Exam MainGameLogic/main.cpp
         MainGameLogic/Logger_Engine.h
         MainGameLogic/StartGameEngine.cpp
         MainGameLogic/StartGameEngine.h
-        MainGameLogic/Constants_Game.h)
+        MainGameLogic/Constants_Game.h
+        AllHeroes/Hero.cpp
+        AllHeroes/Hero.h)

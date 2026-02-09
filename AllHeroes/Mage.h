@@ -1,15 +1,16 @@
 #ifndef GLADEMAGE_EXAM_MAGE_H
 #define GLADEMAGE_EXAM_MAGE_H
 
+#include "../AllAbilities/Fireball_Mage.h"
+#include "../AllAbilities/FrostBite_Mage.h"
+#include "Hero.h"
 
-class Mage {
+
+class Mage : public Hero {
     public:
     Mage();
-
-    int health;
-    int maxhealth;
-    int damage;
-    int mana;
+    Fireball_Mage Fireball;
+    FrostBite_Mage Frostbite;
 };
 
 
