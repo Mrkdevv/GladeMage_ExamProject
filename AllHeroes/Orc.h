@@ -13,6 +13,10 @@ class Orc : public Hero {
     Orc();
     Berserker_Orc berserker;
     Protection_Orc protection;
+
+    void ShowAbilities();
+    void FirstAbility(Hero* target);
+    void SecondAbility(Hero* target);
 };
 
 

@@ -11,6 +11,9 @@ class Mage : public Hero {
     Mage();
     Fireball_Mage Fireball;
     FrostBite_Mage Frostbite;
+    void ShowAbilities();
+    void FirstAbility(Hero* target);
+    void SecondAbility(Hero* target);
 };
 
 

@@ -21,6 +21,10 @@ public:
     void PlayersName(int num, std::string &nameTarget);
     void PlayersHeroChoose(std::string PlayerName, Hero* &Target);
 
+    void StartFight();
+    void PlayerTurn(Hero* attaker , Hero* victim , std::string AttackerName);
+
+
     ~BattleEngine() {
         delete p1;
         delete p2;

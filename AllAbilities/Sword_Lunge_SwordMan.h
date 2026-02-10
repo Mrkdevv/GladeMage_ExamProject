@@ -1,13 +1,10 @@
-//
-// Created by dedus on 07.02.2026.
-//
-
 #ifndef GLADEMAGE_EXAM_SWORD_LUNGE_SWORDMAN_H
 #define GLADEMAGE_EXAM_SWORD_LUNGE_SWORDMAN_H
-
+#include <string>
 
 class Sword_Lunge_SwordMan {
     public:
+    std::string name;
     int MANA_COST;
     int DAMAGE;
     int ROUND_DURATION;

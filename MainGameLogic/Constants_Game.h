@@ -18,7 +18,7 @@ namespace GameSettings {
         }
 
         namespace Protection {
-            constexpr int HEALTH_COST = 20;
+            constexpr int HEALTH_COST = 30;
             constexpr int ADDED_DAMAGE = 5;
             constexpr int ADDED_HP = 10;
             constexpr int ROUND_DURATION = 1;

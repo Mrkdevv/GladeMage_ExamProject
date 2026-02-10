@@ -13,6 +13,10 @@ public:
     Archer();
     Hail_of_arrows_Archer HailOfArrows;
     Powershot_Archer Powershot;
+    void ShowAbilities();
+    void FirstAbility(Hero* target);
+    void SecondAbility(Hero* target);
+
 };
 
 #endif //GLADEMAGE_EXAM_ARCHER_H

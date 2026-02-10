@@ -13,6 +13,9 @@ class SwordMan : public Hero {
     SwordMan();
     Slashing_Lunge_SwordMan Slashing_Lunge;
     Sword_Lunge_SwordMan Sword_Lunge;
+    void ShowAbilities();
+    void FirstAbility(Hero* target);
+    void SecondAbility(Hero* target);
 };
 
 

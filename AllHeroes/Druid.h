@@ -12,11 +12,11 @@
 class Druid : public Hero {
     public:
     Druid();
-    Wild_Shape_Druid wild_shape;
-    Strangleroot_Druid strangleroot;
-
-
-
+    Strangleroot_Druid Strangleroot_Druid;
+    Wild_Shape_Druid Wild_Shape_Druid;
+    void ShowAbilities();
+    void FirstAbility(Hero* target);
+    void SecondAbility(Hero* target);
 };
 
 
