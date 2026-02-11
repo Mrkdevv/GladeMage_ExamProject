@@ -15,7 +15,7 @@ class SwordMan : public Hero {
     Sword_Lunge_SwordMan Sword_Lunge;
     void ShowAbilities();
     void FirstAbility(Hero* target);
-    void SecondAbility(Hero* target)
+    void SecondAbility(Hero* target);
 };
 
 

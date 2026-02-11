@@ -15,7 +15,6 @@ void SwordMan::ShowAbilities()
 {
     std::cout << "1) " << Slashing_Lunge.name << "\n2) " << Sword_Lunge.name << std::endl;
 }
-C++
 void SwordMan::FirstAbility(Hero* target) {
     if (this->mana >= GameSettings::SwordMan::Slashing_Lunge::MANA_COST) {
         this->mana -= GameSettings::SwordMan::Slashing_Lunge::MANA_COST;

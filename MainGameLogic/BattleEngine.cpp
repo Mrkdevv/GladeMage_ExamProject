@@ -91,33 +91,51 @@ void BattleEngine::StartFight() {
 
 void BattleEngine::PlayerTurn(Hero* attacker, Hero* victim, std::string attackerName) {
     int choice;
-    std::cout << "\n-----" << attackerName<< " your turn, please choose an option." << std::endl;
-    std::cout << "1)simple attack , \n2)Ability , \n3)parry" << std::endl;
+    std::cout << "\n----- " << attackerName << " your turn, please choose an option. -----" << std::endl;
+    std::cout << "1) simple attack \n2) Ability \n3) parry" << std::endl;
     std::cin >> choice;
-    int abilityChoice;
+
     switch (choice) {
         case 1:
-            std::cout << attackerName << "deals " << attacker->damage << "damage!" << std::endl;
+            std::cout << attackerName << " deals " << attacker->damage << " damage!" << std::endl;
             victim->health -= attacker->damage;
+            if (victim->health < 0) victim->health = 0;
             break;
-        case 2:
-                int abilityChoice;
-                std::cout << attackerName << "Choose ability: " << std::endl;
-                attacker->ShowAbilities();
-                std::cin >> abilityChoice;
-                switch (abilityChoice) {
-                    case 1:
-                        std::cout << attackerName << "Chosen " << abilityChoice << "'st ability: " << std::endl;
-                        break;
-                    case 2:
-                        std::cout << attackerName << "Chosen " << abilityChoice << "'st ability: " << std::endl;
-                    default:
-                        std::cout << "Sorry, choose your ability from list!" << std::endl;
-                }
-        case 3:
-            std::cout << attackerName << "decided to parry/skip the attack!" << std::endl;
-        default:
-            std::cout << "Sorry, choose your hero from list!" << std::endl;
 
+        case 2:
+            int abilityChoice;
+            std::cout << attackerName << ", choose ability: " << std::endl;
+            attacker->ShowAbilities();
+            std::cin >> abilityChoice;
+
+            switch (abilityChoice) {
+                case 1:
+                    attacker->FirstAbility(victim);
+                    break;
+                case 2:
+                    attacker->SecondAbility(victim);
+                    break;
+                default:
+                    std::cout << "Invalid ability choice!" << std::endl;
+                    break;
+            }
+            break;
+
+        case 3:
+            std::cout << attackerName << " decided to wait and skipped the turn!" << std::endl;
+            break;
+
+        default:
+            std::cout << "Invalid action! You lost your turn due to confusion." << std::endl;
+            break;
+    }
+    std::cout << "\n================================" << std::endl;
+    std::cout << " STATUS AFTER TURN:" << std::endl;
+    std::cout << " " << attackerName << " -> HP: " << attacker->health << " | Mana: " << attacker->mana << std::endl;
+    std::cout << " Enemy (" << victim->name << ") -> HP: " << victim->health << " | Mana: " << victim->mana << std::endl;
+    std::cout << "================================" << std::endl;
+
+    if (victim->health <= 0) {
+        std::cout << "\n!!! " << attackerName << " WINS !!!" << std::endl;
     }
 }
